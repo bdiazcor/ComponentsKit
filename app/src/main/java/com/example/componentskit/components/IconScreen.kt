@@ -4,6 +4,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Bathtub
@@ -46,7 +48,10 @@ fun IconScreen(navController: NavHostController) {
                 title = { Text("Icon Screen") })
         }
     ) { paddingValues ->
-        Column(modifier = Modifier.padding(paddingValues)) {
+        Column(modifier = Modifier
+            .padding(paddingValues)
+            .verticalScroll(state = rememberScrollState())
+        ) {
 
             /* En el componente Icon es obligatorio selecciona una imagen (painter,
              bitmap, imageVector, etc) y añadir un contentDescription (por temas de
@@ -145,8 +150,6 @@ fun IconScreen(navController: NavHostController) {
                         .size(100.dp)
                 )
             }
-
-
         }
     }
 }

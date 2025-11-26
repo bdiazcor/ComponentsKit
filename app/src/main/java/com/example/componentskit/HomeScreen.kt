@@ -4,6 +4,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AdsClick
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -33,6 +34,13 @@ fun HomeScreen(navController: NavHostController) {
                 Icons.Default.Face,
                 Modifier.clickable {
                     navController.navigate(Screens.IconScreen.name)
+                }
+            )
+            ItemComponent(
+                "Icon",
+                Icons.Default.AdsClick,
+                Modifier.clickable {
+                    navController.navigate(Screens.ButtonScreen.name)
                 }
             )
         }
