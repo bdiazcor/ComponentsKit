@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Face
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -24,8 +25,16 @@ fun HomeScreen(navController: NavHostController) {
                 "Text",
                 Icons.Default.Edit,
                 Modifier.clickable {
-                    navController.navigate("text")
-                })
+                    navController.navigate(Screens.TextScreen.name)
+                }
+            )
+            ItemComponent(
+                "Icon",
+                Icons.Default.Face,
+                Modifier.clickable {
+                    navController.navigate(Screens.IconScreen.name)
+                }
+            )
         }
     }
 

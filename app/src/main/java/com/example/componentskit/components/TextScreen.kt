@@ -23,6 +23,27 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
+/**
+ * Pantalla didáctica diseñada para demostrar las capacidades del componente [Text].
+ *
+ * Esta función presenta una colección de ejemplos prácticos sobre cómo manipular y estilizar
+ * texto en Jetpack Compose, organizados de menor a mayor complejidad:
+ *
+ * 1. **Propiedades Directas:** Modificación básica de parámetros individuales como `fontSize`.
+ * 2. **Textos Largos:** Comportamiento de párrafos extensos (Lorem Ipsum) y saltos de línea automáticos.
+ * 3. **Objeto [TextStyle]:** Uso de un objeto de estilo para agrupar configuraciones (color, peso, tamaño),
+ * promoviendo un código más limpio y reutilizable frente a las propiedades sueltas.
+ * 4. **Texto Enriquecido ([buildAnnotatedString]):** Introducción a [SpanStyle] y `withStyle` para aplicar
+ * formatos diferentes (como negritas) a palabras específicas dentro de una misma frase.
+ *
+ * **Navegación:**
+ * Incluye una [TopAppBar] con un botón de retroceso que invoca a [navController.popBackStack].
+ *
+ * @param navController Controlador necesario para gestionar la navegación de vuelta al menú principal.
+ * @see Text
+ * @see TextStyle
+ * @see SpanStyle
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TextScreen(navController: NavHostController) {
