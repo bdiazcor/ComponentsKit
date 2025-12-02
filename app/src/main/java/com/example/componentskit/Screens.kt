@@ -5,4 +5,5 @@ sealed class Screens (val name: String) {
     object TextScreen: Screens("text")
     object IconScreen: Screens("icon")
     object ButtonScreen: Screens("button")
+    object TextFieldScreen: Screens("textfield")
 }
