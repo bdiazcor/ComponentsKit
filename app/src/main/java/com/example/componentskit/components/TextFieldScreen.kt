@@ -154,12 +154,12 @@ fun TextFieldScreen(navController: NavHostController) {
                         if (showPassword) {
                             Icon(
                                 Icons.Default.Visibility,
-                                contentDescription = "Contraseña "
+                                contentDescription = "Contraseña visible"
                             )
                         } else
                             Icon(
                                 Icons.Default.VisibilityOff,
-                                "Contraseña ocultar"
+                                "Contraseña oculta"
                             )
                     }
                 },
