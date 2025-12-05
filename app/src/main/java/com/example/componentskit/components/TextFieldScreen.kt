@@ -19,7 +19,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -54,7 +54,7 @@ fun TextFieldScreen(navController: NavHostController) {
                 .fillMaxSize()
         ) {
             //Textfield()
-            var text by remember { mutableStateOf(value = "") }
+            var text by rememberSaveable { mutableStateOf(value = "") }
             TextField(
                 modifier = Modifier.padding(16.dp),
                 value = text, onValueChange = { newValue: String
@@ -69,7 +69,7 @@ fun TextFieldScreen(navController: NavHostController) {
             * label: "Introduce tu nombre
             * */
 
-            var text2 by remember { mutableStateOf("") }
+            var text2 by rememberSaveable { mutableStateOf("") }
 
             TextField(
                 modifier = Modifier.padding(16.dp),
@@ -82,7 +82,7 @@ fun TextFieldScreen(navController: NavHostController) {
 
             // OutlinedTextField()
 
-            var text3 by remember { mutableStateOf("") }
+            var text3 by rememberSaveable { mutableStateOf("") }
 
             OutlinedTextField(
                 modifier = Modifier.padding(16.dp),
@@ -97,7 +97,7 @@ fun TextFieldScreen(navController: NavHostController) {
             * singleLine = true
             */
 
-            var text4 by remember { mutableStateOf("") }
+            var text4 by rememberSaveable { mutableStateOf("") }
 
             OutlinedTextField(
                 modifier = Modifier.padding(16.dp),
@@ -114,7 +114,7 @@ fun TextFieldScreen(navController: NavHostController) {
             * Se usa para ocultar las letras cuando escribimos una paswword.
             */
 
-            var text5 by remember { mutableStateOf("") }
+            var text5 by rememberSaveable { mutableStateOf("") }
 
             OutlinedTextField(
                 modifier = Modifier.padding(16.dp),
@@ -138,10 +138,10 @@ fun TextFieldScreen(navController: NavHostController) {
             * - visualTransformation del texto
             */
 
-            var text6 by remember { mutableStateOf("") }
+            var text6 by rememberSaveable { mutableStateOf("") }
 
             //Variable que controla si mostramos u ocultamos contraseña
-            var showPassword by remember { mutableStateOf(false) }
+            var showPassword by rememberSaveable { mutableStateOf(false) }
 
             OutlinedTextField(
                 trailingIcon = {

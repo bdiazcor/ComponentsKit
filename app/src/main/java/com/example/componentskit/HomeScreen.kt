@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AdsClick
+import androidx.compose.material.icons.filled.CheckBox
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.SpaceBar
@@ -49,6 +50,13 @@ fun HomeScreen(navController: NavHostController) {
                 Icons.Default.SpaceBar,
                 Modifier.clickable {
                     navController.navigate(Screens.TextFieldScreen.name)
+                }
+            )
+            ItemComponent(
+                "CheckBox",
+                Icons.Default.CheckBox,
+                Modifier.clickable {
+                    navController.navigate(Screens.CheckBoxScreen.name)
                 }
             )
         }
