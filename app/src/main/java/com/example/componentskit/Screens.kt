@@ -7,4 +7,7 @@ sealed class Screens (val name: String) {
     object ButtonScreen: Screens("button")
     object TextFieldScreen: Screens("textfield")
     object CheckBoxScreen: Screens("checkbox")
+    object SwitchScreen: Screens("switch")
+    object RadioButtonScreen: Screens("radiobutton")
+    object ImageScreen: Screens("image")
 }

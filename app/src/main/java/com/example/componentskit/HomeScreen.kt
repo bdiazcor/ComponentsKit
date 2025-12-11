@@ -8,7 +8,10 @@ import androidx.compose.material.icons.filled.AdsClick
 import androidx.compose.material.icons.filled.CheckBox
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.Image
+import androidx.compose.material.icons.filled.RadioButtonChecked
 import androidx.compose.material.icons.filled.SpaceBar
+import androidx.compose.material.icons.filled.SwitchLeft
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -59,6 +62,28 @@ fun HomeScreen(navController: NavHostController) {
                     navController.navigate(Screens.CheckBoxScreen.name)
                 }
             )
+            ItemComponent(
+                "Switch",
+                Icons.Default.SwitchLeft,
+                Modifier.clickable {
+                    navController.navigate(Screens.SwitchScreen.name)
+                }
+            )
+            ItemComponent(
+                "RadioButton",
+                Icons.Default.RadioButtonChecked,
+                Modifier.clickable {
+                    navController.navigate(Screens.RadioButtonScreen.name)
+                }
+            )
+            ItemComponent(
+                "Image",
+                Icons.Default.Image,
+                Modifier.clickable {
+                    navController.navigate(Screens.ImageScreen.name)
+                }
+            )
+
         }
     }
 

@@ -7,6 +7,9 @@ import androidx.navigation.compose.rememberNavController
 import com.example.componentskit.components.ButtonScreen
 import com.example.componentskit.components.CheckBoxScreen
 import com.example.componentskit.components.IconScreen
+import com.example.componentskit.components.ImageScreen
+import com.example.componentskit.components.RadioButtonScreen
+import com.example.componentskit.components.SwitchScreen
 import com.example.componentskit.components.TextFieldScreen
 import com.example.componentskit.components.TextScreen
 
@@ -24,6 +27,11 @@ fun NavigationHostController() {
         composable(Screens.ButtonScreen.name) { ButtonScreen(navController) }
         composable(Screens.TextFieldScreen.name) { TextFieldScreen(navController) }
         composable(Screens.CheckBoxScreen.name) { CheckBoxScreen(navController) }
+        composable(Screens.SwitchScreen.name) { SwitchScreen(navController) }
+        composable(Screens.RadioButtonScreen.name) { RadioButtonScreen(navController) }
+        composable(Screens.ImageScreen.name) { ImageScreen(navController) }
+
+
     }
 
 }
