@@ -5,9 +5,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.componentskit.components.ButtonScreen
+import com.example.componentskit.components.CardScreen
 import com.example.componentskit.components.CheckBoxScreen
 import com.example.componentskit.components.IconScreen
 import com.example.componentskit.components.ImageScreen
+import com.example.componentskit.components.LazyColumnScreen
+import com.example.componentskit.components.Material3Screen
 import com.example.componentskit.components.RadioButtonScreen
 import com.example.componentskit.components.SwitchScreen
 import com.example.componentskit.components.TextFieldScreen
@@ -30,7 +33,9 @@ fun NavigationHostController() {
         composable(Screens.SwitchScreen.name) { SwitchScreen(navController) }
         composable(Screens.RadioButtonScreen.name) { RadioButtonScreen(navController) }
         composable(Screens.ImageScreen.name) { ImageScreen(navController) }
-
+        composable(Screens.CardScreen.name) { CardScreen(navController) }
+        composable(Screens.LazyColumnScreen.name) { LazyColumnScreen(navController) }
+        composable(Screens.Material3Screen.name) { Material3Screen(navController) }
 
     }
 

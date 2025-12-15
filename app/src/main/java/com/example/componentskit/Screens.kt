@@ -10,4 +10,7 @@ sealed class Screens (val name: String) {
     object SwitchScreen: Screens("switch")
     object RadioButtonScreen: Screens("radiobutton")
     object ImageScreen: Screens("image")
+    object CardScreen: Screens("card")
+    object LazyColumnScreen: Screens("lazycolumn")
+    object Material3Screen: Screens("material3")
 }
