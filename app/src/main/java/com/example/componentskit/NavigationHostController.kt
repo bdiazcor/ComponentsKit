@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.componentskit.components.AlertDialogScreen
 import com.example.componentskit.components.ButtonScreen
 import com.example.componentskit.components.CardScreen
 import com.example.componentskit.components.CheckBoxScreen
@@ -12,9 +13,11 @@ import com.example.componentskit.components.ImageScreen
 import com.example.componentskit.components.LazyColumnScreen
 import com.example.componentskit.components.Material3Screen
 import com.example.componentskit.components.RadioButtonScreen
+import com.example.componentskit.components.SnackbarScreen
 import com.example.componentskit.components.SwitchScreen
 import com.example.componentskit.components.TextFieldScreen
 import com.example.componentskit.components.TextScreen
+import com.example.componentskit.components.ToastScreen
 
 @Composable
 fun NavigationHostController() {
@@ -36,7 +39,9 @@ fun NavigationHostController() {
         composable(Screens.CardScreen.name) { CardScreen(navController) }
         composable(Screens.LazyColumnScreen.name) { LazyColumnScreen(navController) }
         composable(Screens.Material3Screen.name) { Material3Screen(navController) }
-
+        composable(Screens.AlertDialogScreen.name) { AlertDialogScreen(navController) }
+        composable(Screens.ToastScreen.name) { ToastScreen(navController) }
+        composable(Screens.SnackbarScreen.name) { SnackbarScreen(navController) }
     }
 
 }

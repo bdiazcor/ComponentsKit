@@ -16,6 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+//Representación gráfica de cada elemento del menú de HomeScreen
 @Composable
 fun ItemComponent(name: String, icon: ImageVector, modifier: Modifier) {
 
@@ -36,6 +37,5 @@ fun ItemComponent(name: String, icon: ImageVector, modifier: Modifier) {
                 contentDescription = "Ir al detalle del componente")
         }
     }
-
 }
 

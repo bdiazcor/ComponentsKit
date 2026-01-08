@@ -107,8 +107,6 @@ fun TextFieldScreen(navController: NavHostController) {
                 singleLine = true
             )
 
-            HorizontalDivider()
-
             /* OutlinedTextField(): parámetros para transformar el texto:
             * visualTranformation = PasswordVisualTransformation().
             * Se usa para ocultar las letras cuando escribimos una paswword.
